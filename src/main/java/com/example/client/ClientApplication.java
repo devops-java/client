@@ -22,9 +22,9 @@ public class ClientApplication {
 		
 		String serverName=id;
 		
-		String url="http://"+serverName+":8080/sr";
-		String response = template.getForObject(url, String.class);
-
+		//String url="http://"+serverName+":8080/app/sr";
+		//String response = template.getForObject(url, String.class);
+		String response="MyServer";
 		return response;
 
 	}
