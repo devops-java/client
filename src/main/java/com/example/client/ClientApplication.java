@@ -20,7 +20,7 @@ public class ClientApplication {
 
 		RestTemplate template = new RestTemplate();
 		
-		//String url="http://server:8080/app/sr";
+		String url="http://server:8080/app/sr";
 		String response = template.getForObject(url, String.class);
 		//String response="MyServer";
 		return response;
