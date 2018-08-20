@@ -15,14 +15,12 @@ public class ClientApplication {
 		SpringApplication.run(ClientApplication.class, args);
 	}
 	
-	@GetMapping("/cr/{id}")
-	public String getClientResponse(@PathVariable("id") String id) {
+	@GetMapping("/cr")
+	public String getClientResponse() {
 
 		RestTemplate template = new RestTemplate();
 		
-		String serverName=id;
-		
-		//String url="http://"+serverName+":8080/app/sr";
+		//String url="http://server:8080/app/sr";
 		//String response = template.getForObject(url, String.class);
 		String response="MyServer";
 		return response;
